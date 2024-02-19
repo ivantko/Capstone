@@ -1,4 +1,4 @@
-# Flowchart Diagram for visualizing the logical flow of the application and illustrating how non-authenticated and authenticated users navigate different functionalities.
+# Flowchart Diagram
 
 ```mermaid
 flowchart TD
@@ -21,7 +21,7 @@ flowchart TD
     style D fill:#bbf,stroke:#333,stroke-width:4px
     style H fill:#ccf,stroke:#333,stroke-width:4px
 ```
-# Sequence Diagram for detailing the interations between the frontend, the backend, and any third-party services involved in user authentication, plant information retrieval, and data manipulation.
+# Sequence Diagram 
 
 ```mermaid
 sequenceDiagram
