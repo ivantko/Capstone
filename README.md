@@ -1,28 +1,21 @@
 ```mermaid
 flowchart TD
-    start((Start)) --> home["Home Page"]
-    home --> nonAuth["Non-Authenticated User"]
-    home --> auth["Authenticated User"]
-
-    nonAuth -->|Login/Register| loginReg["Log in / Register"]
-    loginReg --> authPath["Authenticated Path"]
-
-    authPath --> viewPlants["View Plants"]
-    authPath --> addPlant["Add Plant"]
-    authPath --> editPlant["Edit Plant"]
-    authPath --> removePlant["Remove Plant"]
-    authPath --> logout["Log Out"]
-
-    viewPlants --> plantDetails["View Plant Details"]
-    addPlant --> enterPlantInfo["Enter Plant Information"]
-
-    enterPlantInfo --> plantSpecies["Plant Species"]
-    enterPlantInfo --> waterFrequency["Water Frequency"]
-    enterPlantInfo --> plantNickname["Plant Nickname"]
-    enterPlantInfo --> plantImage["Image of the Plant"]
-
-    classDef nonAuth fill:#f9f,stroke:#333;
-    classDef auth fill:#bbf,stroke:#333;
-    classDef action fill:#ccf,stroke:#333;
-
+    A["Access the website"] --> B["See home page with app description"]
+    A --> C["Log in or register"]
+    C --> D["Authenticated user"]
+    D --> E["See list of all plants"]
+    D --> F["See details about any plant"]
+    D --> G["Create a new plant"]
+    G --> H["Enter plant information"]
+    H --> I["Plant species"]
+    H --> J["Water frequency"]
+    H --> K["Plant nickname"]
+    H --> L["Image of the plant"]
+    D --> M["Edit an existing plant"]
+    D --> N["Remove a plant from my list"]
+    D --> O["See account information"]
+    D --> P["Logout"]
+    style A fill:#f9f,stroke:#333,stroke-width:4px
+    style D fill:#bbf,stroke:#333,stroke-width:4px
+    style H fill:#ccf,stroke:#333,stroke-width:4px
 ```
